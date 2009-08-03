@@ -1,0 +1,286 @@
+gnustep-base
+------------------------------------------
+The GNUstep Base Library is a library of general-purpose, non-graphical
+Objective C objects.  For example, it includes classes for strings,
+object collections, byte streams, typed coders, invocations,
+notifications, notification dispatchers, moments in time, network ports,
+remote object messaging support (distributed objects), and event loops.
+
+It provides functionality that aims to implement the non-graphical
+portion of the OpenStep standard (the Foundation library).
+
+Runtime requirements:
+  cygwin-1.7.0-56
+  gnustep-common-2.2.0-1
+  libffi5-3.0.8-10
+  libgcc1-4.3.2-2
+  libgcrypt11-1.4.1-4
+  libgnutls26-2.4.1-1
+  libiconv2-1.13-10
+  libobjc2-4.3.2-2
+  libxml2-2.7.3-10
+  libxslt-1.1.24-10
+  openssl-0.9.8k-2
+  zlib0-1.2.3-10
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygport-0.9.9-1
+  gcc4-core-4.3.2-2
+  gcc4-objc-4.3.2-2
+  gnustep-make-2.2.0-1
+  make-3.81-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnustep.org/
+
+Canonical download:
+  http://ftpmain.gnustep.org/pub/gnustep/core/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnustep-base-1.18.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnustep-base-1.18.0-X.cygport all
+
+This will create:
+  /usr/src/gnustep-base-1.18.0-X-src.tar.bz2
+  /usr/src/gnustep-base-1.18.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(gnustep-base)
+  /usr/bin/HTMLLinker.exe
+  /usr/bin/autogsdoc.exe
+  /usr/bin/cvtenc.exe
+  /usr/bin/defaults.exe
+  /usr/bin/gdnc.exe
+  /usr/bin/gdomap.exe
+  /usr/bin/gspath.exe
+  /usr/bin/make_strings.exe
+  /usr/bin/pl.exe
+  /usr/bin/pl2link.exe
+  /usr/bin/pldes.exe
+  /usr/bin/plget.exe
+  /usr/bin/plmerge.exe
+  /usr/bin/plparse.exe
+  /usr/bin/plser.exe
+  /usr/bin/sfparse.exe
+  /usr/bin/xmlparse.exe
+  /usr/lib/GNUstep/DTDs/gsdoc-0_6_5.dtd
+  /usr/lib/GNUstep/DTDs/gsdoc-0_6_6.dtd
+  /usr/lib/GNUstep/DTDs/gsdoc-0_6_7.dtd
+  /usr/lib/GNUstep/DTDs/gsdoc-1_0_0.dtd
+  /usr/lib/GNUstep/DTDs/gsdoc-1_0_1.dtd
+  /usr/lib/GNUstep/DTDs/gsdoc-1_0_1.rnc
+  /usr/lib/GNUstep/DTDs/gsdoc-1_0_2.dtd
+  /usr/lib/GNUstep/DTDs/gsdoc-1_0_3.dtd
+  /usr/lib/GNUstep/DTDs/plist-0_9.dtd
+  /usr/share/doc/gnustep-base/ANNOUNCE
+  /usr/share/doc/gnustep-base/COPYING
+  /usr/share/doc/gnustep-base/COPYING.LIB
+  /usr/share/doc/gnustep-base/ChangeLog
+  /usr/share/doc/gnustep-base/NEWS
+  /usr/share/doc/gnustep-base/README
+  /usr/share/man/man1/autogsdoc.1.gz
+  /usr/share/man/man1/cvtenc.1.gz
+  /usr/share/man/man1/defaults.1.gz
+  /usr/share/man/man1/gdnc.1.gz
+  /usr/share/man/man1/gspath.1.gz
+  /usr/share/man/man1/pldes.1.gz
+  /usr/share/man/man1/sfparse.1.gz
+  /usr/share/man/man1/xmlparse.1.gz
+  /usr/share/man/man8/gdomap.8.gz
+
+(libgnustep-base1.18)
+  /usr/bin/cyggnustep-base-1_18.dll
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/English.lproj/Localizable.strings
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/Esperanto.lproj/Localizable.strings
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/French.lproj/Localizable.strings
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/German.lproj/Localizable.strings
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/Info-gnustep.plist
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/Italian.lproj/Localizable.strings
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/Korean.lproj/Localizable.strings
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/Languages/*
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/.README.swp
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/GNUmakefile
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/GNUstep_zones
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/README
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/abbreviations
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/abbreviations.plist
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/create-abbrevs.m
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/create-regions.m
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/nstimezone.m
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/regions
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/NSTimeZones/zones/*/*/*
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/SSL.bundle/Resources/Info-gnustep.plist
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/SSL.bundle/SSL.dll
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/SSL.bundle/stamp.make
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/Spanish.lproj/Localizable.strings
+  /usr/lib/GNUstep/Libraries/gnustep-base/Versions/1.18/Resources/TraditionalChinese.lproj/Localizable.strings
+
+(libgnustep-base-devel)
+  /usr/include/GNUstep/Foundation/Foundation.h
+  /usr/include/GNUstep/Foundation/FoundationErrors.h
+  /usr/include/GNUstep/Foundation/GSMime.h
+  /usr/include/GNUstep/Foundation/GSXML.h
+  /usr/include/GNUstep/Foundation/NSAffineTransform.h
+  /usr/include/GNUstep/Foundation/NSArchiver.h
+  /usr/include/GNUstep/Foundation/NSArray.h
+  /usr/include/GNUstep/Foundation/NSAttributedString.h
+  /usr/include/GNUstep/Foundation/NSAutoreleasePool.h
+  /usr/include/GNUstep/Foundation/NSBundle.h
+  /usr/include/GNUstep/Foundation/NSByteOrder.h
+  /usr/include/GNUstep/Foundation/NSCalendarDate.h
+  /usr/include/GNUstep/Foundation/NSCharacterSet.h
+  /usr/include/GNUstep/Foundation/NSClassDescription.h
+  /usr/include/GNUstep/Foundation/NSCoder.h
+  /usr/include/GNUstep/Foundation/NSComparisonPredicate.h
+  /usr/include/GNUstep/Foundation/NSCompoundPredicate.h
+  /usr/include/GNUstep/Foundation/NSConnection.h
+  /usr/include/GNUstep/Foundation/NSData.h
+  /usr/include/GNUstep/Foundation/NSDate.h
+  /usr/include/GNUstep/Foundation/NSDateFormatter.h
+  /usr/include/GNUstep/Foundation/NSDebug.h
+  /usr/include/GNUstep/Foundation/NSDecimal.h
+  /usr/include/GNUstep/Foundation/NSDecimalNumber.h
+  /usr/include/GNUstep/Foundation/NSDictionary.h
+  /usr/include/GNUstep/Foundation/NSDistantObject.h
+  /usr/include/GNUstep/Foundation/NSDistributedLock.h
+  /usr/include/GNUstep/Foundation/NSDistributedNotificationCenter.h
+  /usr/include/GNUstep/Foundation/NSEnumerator.h
+  /usr/include/GNUstep/Foundation/NSError.h
+  /usr/include/GNUstep/Foundation/NSErrorRecoveryAttempting.h
+  /usr/include/GNUstep/Foundation/NSException.h
+  /usr/include/GNUstep/Foundation/NSExpression.h
+  /usr/include/GNUstep/Foundation/NSFileHandle.h
+  /usr/include/GNUstep/Foundation/NSFileManager.h
+  /usr/include/GNUstep/Foundation/NSFormatter.h
+  /usr/include/GNUstep/Foundation/NSGeometry.h
+  /usr/include/GNUstep/Foundation/NSHTTPCookie.h
+  /usr/include/GNUstep/Foundation/NSHTTPCookieStorage.h
+  /usr/include/GNUstep/Foundation/NSHashTable.h
+  /usr/include/GNUstep/Foundation/NSHost.h
+  /usr/include/GNUstep/Foundation/NSIndexPath.h
+  /usr/include/GNUstep/Foundation/NSIndexSet.h
+  /usr/include/GNUstep/Foundation/NSInvocation.h
+  /usr/include/GNUstep/Foundation/NSKeyValueCoding.h
+  /usr/include/GNUstep/Foundation/NSKeyValueObserving.h
+  /usr/include/GNUstep/Foundation/NSKeyedArchiver.h
+  /usr/include/GNUstep/Foundation/NSLock.h
+  /usr/include/GNUstep/Foundation/NSMapTable.h
+  /usr/include/GNUstep/Foundation/NSMethodSignature.h
+  /usr/include/GNUstep/Foundation/NSNetServices.h
+  /usr/include/GNUstep/Foundation/NSNotification.h
+  /usr/include/GNUstep/Foundation/NSNotificationQueue.h
+  /usr/include/GNUstep/Foundation/NSNull.h
+  /usr/include/GNUstep/Foundation/NSNumberFormatter.h
+  /usr/include/GNUstep/Foundation/NSObjCRuntime.h
+  /usr/include/GNUstep/Foundation/NSObject.h
+  /usr/include/GNUstep/Foundation/NSPathUtilities.h
+  /usr/include/GNUstep/Foundation/NSPort.h
+  /usr/include/GNUstep/Foundation/NSPortCoder.h
+  /usr/include/GNUstep/Foundation/NSPortMessage.h
+  /usr/include/GNUstep/Foundation/NSPortNameServer.h
+  /usr/include/GNUstep/Foundation/NSPredicate.h
+  /usr/include/GNUstep/Foundation/NSProcessInfo.h
+  /usr/include/GNUstep/Foundation/NSPropertyList.h
+  /usr/include/GNUstep/Foundation/NSProtocolChecker.h
+  /usr/include/GNUstep/Foundation/NSProxy.h
+  /usr/include/GNUstep/Foundation/NSRange.h
+  /usr/include/GNUstep/Foundation/NSRunLoop.h
+  /usr/include/GNUstep/Foundation/NSScanner.h
+  /usr/include/GNUstep/Foundation/NSSerialization.h
+  /usr/include/GNUstep/Foundation/NSSet.h
+  /usr/include/GNUstep/Foundation/NSSortDescriptor.h
+  /usr/include/GNUstep/Foundation/NSSpellServer.h
+  /usr/include/GNUstep/Foundation/NSStream.h
+  /usr/include/GNUstep/Foundation/NSString.h
+  /usr/include/GNUstep/Foundation/NSTask.h
+  /usr/include/GNUstep/Foundation/NSThread.h
+  /usr/include/GNUstep/Foundation/NSTimeZone.h
+  /usr/include/GNUstep/Foundation/NSTimer.h
+  /usr/include/GNUstep/Foundation/NSURL.h
+  /usr/include/GNUstep/Foundation/NSURLAuthenticationChallenge.h
+  /usr/include/GNUstep/Foundation/NSURLCache.h
+  /usr/include/GNUstep/Foundation/NSURLConnection.h
+  /usr/include/GNUstep/Foundation/NSURLCredential.h
+  /usr/include/GNUstep/Foundation/NSURLCredentialStorage.h
+  /usr/include/GNUstep/Foundation/NSURLDownload.h
+  /usr/include/GNUstep/Foundation/NSURLError.h
+  /usr/include/GNUstep/Foundation/NSURLHandle.h
+  /usr/include/GNUstep/Foundation/NSURLProtectionSpace.h
+  /usr/include/GNUstep/Foundation/NSURLProtocol.h
+  /usr/include/GNUstep/Foundation/NSURLRequest.h
+  /usr/include/GNUstep/Foundation/NSURLResponse.h
+  /usr/include/GNUstep/Foundation/NSUndoManager.h
+  /usr/include/GNUstep/Foundation/NSUserDefaults.h
+  /usr/include/GNUstep/Foundation/NSUtilities.h
+  /usr/include/GNUstep/Foundation/NSValue.h
+  /usr/include/GNUstep/Foundation/NSValueTransformer.h
+  /usr/include/GNUstep/Foundation/NSXMLParser.h
+  /usr/include/GNUstep/Foundation/NSZone.h
+  /usr/include/GNUstep/GNUstepBase/GCObject.h
+  /usr/include/GNUstep/GNUstepBase/GNUstep.h
+  /usr/include/GNUstep/GNUstepBase/GSCategories.h
+  /usr/include/GNUstep/GNUstepBase/GSConfig.h
+  /usr/include/GNUstep/GNUstepBase/GSFileHandle.h
+  /usr/include/GNUstep/GNUstepBase/GSFunctions.h
+  /usr/include/GNUstep/GNUstepBase/GSIArray.h
+  /usr/include/GNUstep/GNUstepBase/GSIMap.h
+  /usr/include/GNUstep/GNUstepBase/GSLocale.h
+  /usr/include/GNUstep/GNUstepBase/GSLock.h
+  /usr/include/GNUstep/GNUstepBase/GSMime.h
+  /usr/include/GNUstep/GNUstepBase/GSObjCRuntime.h
+  /usr/include/GNUstep/GNUstepBase/GSUnion.h
+  /usr/include/GNUstep/GNUstepBase/GSVersionMacros.h
+  /usr/include/GNUstep/GNUstepBase/GSXML.h
+  /usr/include/GNUstep/GNUstepBase/NSTask+GS.h
+  /usr/include/GNUstep/GNUstepBase/Unicode.h
+  /usr/include/GNUstep/GNUstepBase/behavior.h
+  /usr/include/GNUstep/GNUstepBase/objc-gnu2next.h
+  /usr/include/GNUstep/GNUstepBase/preface.h
+  /usr/include/GNUstep/gnustep/base/GCObject.h
+  /usr/include/GNUstep/gnustep/base/GNUstep.h
+  /usr/include/GNUstep/gnustep/base/GSCategories.h
+  /usr/include/GNUstep/gnustep/base/GSFileHandle.h
+  /usr/include/GNUstep/gnustep/base/GSFunctions.h
+  /usr/include/GNUstep/gnustep/base/GSIArray.h
+  /usr/include/GNUstep/gnustep/base/GSIMap.h
+  /usr/include/GNUstep/gnustep/base/GSLocale.h
+  /usr/include/GNUstep/gnustep/base/GSLock.h
+  /usr/include/GNUstep/gnustep/base/GSMime.h
+  /usr/include/GNUstep/gnustep/base/GSObjCRuntime.h
+  /usr/include/GNUstep/gnustep/base/GSUnion.h
+  /usr/include/GNUstep/gnustep/base/GSVersionMacros.h
+  /usr/include/GNUstep/gnustep/base/GSXML.h
+  /usr/include/GNUstep/gnustep/base/NSTask+GS.h
+  /usr/include/GNUstep/gnustep/base/Unicode.h
+  /usr/include/GNUstep/gnustep/base/behavior.h
+  /usr/include/GNUstep/gnustep/base/objc-gnu2next.h
+  /usr/include/GNUstep/gnustep/base/preface.h
+  /usr/include/GNUstep/gnustep/unicode/caseconv.h
+  /usr/include/GNUstep/gnustep/unicode/cop.h
+  /usr/include/GNUstep/gnustep/unicode/cyrillic.h
+  /usr/include/GNUstep/gnustep/unicode/decomp.h
+  /usr/include/GNUstep/gnustep/unicode/latin2.h
+  /usr/include/GNUstep/gnustep/unicode/nextstep.h
+  /usr/lib/libgnustep-base.dll.a
+  /usr/share/GNUstep/Makefiles/Additional/base.make
+
+------------------
+
+Port Notes:
+
+----- version 1.18.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

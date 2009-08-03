@@ -1,0 +1,18 @@
+inherit gnustep
+
+DESCRIPTION="GNUstep foundation libraries"
+
+SRC_URI="mirror://gnustep/core/${P}.tar.gz"
+PATCH_URI="1.18.0-ruby-no-undefined.patch"
+
+PKG_NAMES="${PN} lib${PN}1.18 lib${PN}-devel"
+gnustep_base_CONTENTS="usr/bin/*.exe usr/lib/GNUstep/DTDs/ usr/share/doc/ usr/share/man/"
+libgnustep_base1_18_CONTENTS="usr/bin/*-1_18.dll usr/lib/GNUstep/Libraries/"
+libgnustep_base_devel_CONTENTS="usr/include/ usr/lib/lib* usr/share/GNUstep/Makefiles/"
+
+CYGCONF_ARGS="
+	--enable-libffi
+	--with-ffi-include=$(pkg-config --variable=includedir libffi)
+	--with-ffi-library=$(pkg-config --variable=libdir libffi)
+	ac_cv_header_windows_h=no
+"

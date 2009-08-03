@@ -1,0 +1,13 @@
+This internal symbol is used by ruby-rigs.
+
+--- origsrc/gnustep-base-1.18.0/Source/NSProcessInfo.m	2008-12-19 03:06:14.000000000 -0600
++++ src/gnustep-base-1.18.0/Source/NSProcessInfo.m	2009-08-03 02:55:43.991886900 -0500
+@@ -228,7 +228,7 @@ static BOOL	fallbackInitialisation = NO;
+  *** Implementing the gnustep_base_user_main function
+  *************************************************************************/
+ 
+-static void
++void
+ _gnu_process_args(int argc, char *argv[], char *env[])
+ {
+   CREATE_AUTORELEASE_POOL(arp);
