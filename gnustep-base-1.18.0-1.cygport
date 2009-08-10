@@ -12,7 +12,5 @@ libgnustep_base_devel_CONTENTS="usr/include/ usr/lib/lib* usr/share/GNUstep/Make
 
 CYGCONF_ARGS="
 	--enable-libffi
-	--with-ffi-include=$(pkg-config --variable=includedir libffi)
-	--with-ffi-library=$(pkg-config --variable=libdir libffi)
 	ac_cv_header_windows_h=no
 "

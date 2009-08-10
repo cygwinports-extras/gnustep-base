@@ -12,7 +12,7 @@ portion of the OpenStep standard (the Foundation library).
 Runtime requirements:
   cygwin-1.7.0-56
   gnustep-common-2.2.0-1
-  libffi5-3.0.8-10
+  libffi4-4.3.2-2
   libgcc1-4.3.2-2
   libgcrypt11-1.4.1-4
   libgnutls26-2.4.1-1
