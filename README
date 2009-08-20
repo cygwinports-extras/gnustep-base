@@ -10,7 +10,7 @@ It provides functionality that aims to implement the non-graphical
 portion of the OpenStep standard (the Foundation library).
 
 Runtime requirements:
-  cygwin-1.7.0-56
+  cygwin-1.7.0-58
   gnustep-common-2.2.0-1
   libffi4-4.3.2-2
   libgcc1-4.3.2-2

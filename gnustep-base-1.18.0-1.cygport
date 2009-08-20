@@ -8,7 +8,7 @@ PATCH_URI="1.18.0-ruby-no-undefined.patch"
 PKG_NAMES="${PN} lib${PN}1.18 lib${PN}-devel"
 gnustep_base_CONTENTS="usr/bin/*.exe usr/lib/GNUstep/DTDs/ usr/share/doc/ usr/share/man/"
 libgnustep_base1_18_CONTENTS="usr/bin/*-1_18.dll usr/lib/GNUstep/Libraries/"
-libgnustep_base_devel_CONTENTS="usr/include/ usr/lib/lib* usr/share/GNUstep/Makefiles/"
+libgnustep_base_devel_CONTENTS="usr/include/ usr/lib/lib* usr/share/GNUstep/"
 
 CYGCONF_ARGS="
 	--enable-libffi
