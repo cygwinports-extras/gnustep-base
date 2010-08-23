@@ -1,5 +1,5 @@
 category: GNUstep
-requires: gnustep-common libgcc1 libgnustep-base1.18 libobjc2
+requires: gnustep-common libgcc1 libgnustep-base1.20 libobjc2
 sdesc: "GNUstep Foundation library (servers)"
 ldesc: "The GNUstep Base Library is a library of general-purpose, 
 non-graphical Objective C objects.  For example, it includes classes for 

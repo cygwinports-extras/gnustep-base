@@ -1,5 +1,5 @@
 category: GNUstep
-requires: gcc4-objc gnustep-make libgnustep-base1.18 zlib-devel
+requires: gcc4-objc gnustep-make libgnustep-base1.20 zlib-devel
 external-source: gnustep-base
 sdesc: "GNUstep Foundation library (development)"
 ldesc: "The GNUstep Base Library is a library of general-purpose, 
