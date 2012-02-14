@@ -4,13 +4,13 @@ DESCRIPTION="GNUstep foundation libraries"
 
 SRC_URI="mirror://gnustep/core/${P}.tar.gz"
 
-PKG_NAMES="${PN} lib${PN}1.20 lib${PN}-devel"
+PKG_NAMES="${PN} lib${PN}1.24 lib${PN}-devel"
 gnustep_base_CONTENTS="usr/bin/*.exe usr/lib/GNUstep/DTDs/ usr/share/doc/ usr/share/man/"
-libgnustep_base1_20_CONTENTS="usr/bin/*-1_20.dll usr/lib/GNUstep/Libraries/"
+libgnustep_base1_24_CONTENTS="usr/bin/*-1_24.dll usr/lib/GNUstep/Libraries/"
 libgnustep_base_devel_CONTENTS="usr/include/ usr/lib/lib* usr/share/GNUstep/"
 PKG_IGNORE="usr/share/info/"
 
-CYGCONF_ARGS="ac_cv_header_windows_h=no"
+CYGCONF_ARGS="--with-zeroconf-api=mdns ac_cv_header_windows_h=no"
 
 src_compile() {
 	cd ${S}/SSL
